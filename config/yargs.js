@@ -1,6 +1,6 @@
 const argv = require('yargs').options({
-    ciudad: {
-        alias: 'c',
+    direccion: {
+        alias: 'd',
         demand: true,
         default: 'leon gto'
     }
