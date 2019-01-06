@@ -11,7 +11,7 @@ function getGeometry(encodedUrl) {
                 let bodyJson = JSON.parse(body); //se parsea y guardo el body.
                 let status = bodyJson.status;
                 if (status === 'ZERO_RESULTS') {
-                    reject('No hay nada para mostrar, direccion mal digitada');
+                    reject('Direccion no encontrada.');
                 } else {
                     let results = bodyJson.results[0]; // se optiene la parte de interes.
                     let direccion = results.formatted_address;
